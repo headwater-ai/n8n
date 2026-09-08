@@ -423,4 +423,4 @@ See observability package documentation for details.
 
 - [isolated-vm GitHub](https://github.com/laverdet/isolated-vm)
 - [Web Workers MDN](https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API)
-- [n8n workflow package](../workflow/)
+- [n8n workflow package](../../workflow/)
