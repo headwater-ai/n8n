@@ -5,9 +5,13 @@ description: Keeps implementation and specs in sync. Use when working on a featu
 
 # Spec-Driven Development
 
-Specs live in `.agents/specs/`. They are the source of truth for architectural
-decisions, API contracts, and implementation scope. Implementation and specs
-must stay in sync — neither leads exclusively.
+Specs live in `.agents/specs/`. Where a spec exists it is the source of truth
+for architectural decisions, API contracts, and implementation scope.
+Implementation and specs must stay in sync — neither leads exclusively.
+
+The first spec creates the directory, so on a checkout that has none the
+listing below is empty or fails. Read either as "no spec exists" for every
+feature and go to step 3, rather than as a missing spec for this one.
 
 ## Core Loop
 
@@ -20,7 +24,7 @@ Read spec → Implement → Verify alignment → Update spec or code → Repeat
 1. **Find the spec.** Search `.agents/specs/` for files matching the feature:
 
 ```bash
-ls .agents/specs/
+ls .agents/specs/ 2>/dev/null
 ```
 
 2. **Read the full spec.** Understand scope, decisions, API contracts, and
