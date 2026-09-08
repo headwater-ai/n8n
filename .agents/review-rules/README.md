@@ -22,9 +22,9 @@ clear, when to stay silent, what never to say — lives once in
 
 A directory maps to one agent unless, like `testing/`, the policy is identical
 across domains — then it is one file listed in several agents' `file_paths`,
-never a copy per directory. Security and QA & DX deliberately don't link
-`testing/`: coverage nagging on a credential fix or a Dockerfile is noise those
-agents shouldn't be able to produce.
+never a copy per directory. Security, DB migrations and QA & DX deliberately
+don't link `testing/`: coverage nagging on a credential fix, a migration, or a
+Dockerfile is noise those agents shouldn't be able to produce.
 
 All five slots are used, so a new domain now merges into an existing agent. QA &
 DX covers the build, test, and CI surface — the same paths `.github/OWNERS`
